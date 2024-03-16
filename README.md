@@ -1,30 +1,33 @@
-# React + TypeScript + Vite
+Challenge App
+Welcome to Challenge App! This is a simple web application designed to manage challenges for candidates.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Overview
+Challenge App is a web-based platform that allows users to participate in challenges. Users can register with their name, phone number, and email address. Once registered, they can start the challenge, which involves completing a task within a specified time limit. If the challenge is completed successfully, users are redirected to a candidate page where their registration details are displayed. If the challenge is unsuccessful, users are notified via a modal.
 
-Currently, two official plugins are available:
+Usage
+To use Challenge App, follow these steps:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Clone this repository to your local machine:
 
-## Expanding the ESLint configuration
+bash
+Copy code
+git clone <URL_DO_REPOSITORIO>
+Navigate to the project directory:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+bash
+Copy code
+cd challenge-app
+Install dependencies using pnpm:
 
-- Configure the top-level `parserOptions` property like this:
+bash
+Copy code
+pnpm install
+Run the development server:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+bash
+Copy code
+pnpm dev
+This will start the development server and open the web application in your default browser.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Contributing
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
